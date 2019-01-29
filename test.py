@@ -51,7 +51,7 @@ def nms(plate, thresh):
   return plate
 
 if __name__="__main__":
-  iamge = cv2.imread("timg.jpg")
+  image = cv2.imread("timg.jpg")
   plate = pr.HyperLPR_PlateRecogntion(image)
   nums = len(plate)
   
