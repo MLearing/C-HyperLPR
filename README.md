@@ -24,10 +24,8 @@ image = cv2.imread("demo.jpg")
 #识别结果
 print(HyperLPR_PlateRecogntion(image))
 ```
-
 ###### 个人添加：
-
-[test](https://github.com/MLearing/C-HyperLPR/blob/master/test.py)
+- [新的测试demo](https://github.com/MLearing/C-HyperLPR/blob/master/test.py)
 
 #### Q&A
 
