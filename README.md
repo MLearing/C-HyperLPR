@@ -25,6 +25,10 @@ image = cv2.imread("demo.jpg")
 print(HyperLPR_PlateRecogntion(image))
 ```
 
+###### 个人添加：
+
+[test](https://github.com/MLearing/C-HyperLPR/blob/master/test.py)
+
 #### Q&A
 
 Q：Android识别率没有所传demo apk的识别率高？
