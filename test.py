@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+"""
+   the program only add nms to remove duplicate license plates on the original basis
+"""
 
 import sys
 import cv2
@@ -63,6 +66,7 @@ if __name__="__main__":
       image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
       image = Image.fromarray(image)
       draw = ImageDraw.Draw(image)
+      # simsun.ttc字体包可以从wins系统C:\Windows\Fonts复制到该项目下面
       font = ImageFont.truetype("simsun.ttc", 30, encoding='utf-8')
       draw.text((box[0], box[1]-33), p, (255,255,0), font=font)
       image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
