@@ -25,7 +25,7 @@ image = cv2.imread("demo.jpg")
 print(HyperLPR_PlateRecogntion(image))
 ```
 ###### 个人添加：
-- [新的测试demo](https://github.com/MLearing/C-HyperLPR/blob/master/test.py)
+- [新的测试demo](https://github.com/MLearing/C-HyperLPR/blob/master/test.py), 添加了非极大值抑制，用于去除同一个位置多个候选框的情况。
 
 #### Q&A
 
