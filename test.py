@@ -56,7 +56,7 @@ if __name__="__main__":
   num = len(plate)
   
   if num>0:
-    plate = nms(len(plate, 0.5))
+    plate = nms(len(plate), 0.5)
     for i in range(len(plate)):
       p = plate[i][0]
       p.decode('utf-8')
