@@ -40,7 +40,7 @@ def bbox_iou(box1, box2):
 
 def nms(plate, thresh):
   plate = [idx for idx in sorted(plate, key=lambda x:x[1], reverse=Ture)]
-  num = len(plate)
+  nums = len(plate)
   bbox = [pt[2] for pt in plate]
   
   for i in range(nums):
@@ -53,9 +53,9 @@ def nms(plate, thresh):
 if __name__="__main__":
   iamge = cv2.imread("timg.jpg")
   plate = pr.HyperLPR_PlateRecogntion(image)
-  num = len(plate)
+  nums = len(plate)
   
-  if num>0:
+  if nums>0:
     plate = nms(len(plate), 0.5)
     for i in range(len(plate)):
       p = plate[i][0]
