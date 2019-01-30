@@ -39,7 +39,7 @@ def bbox_iou(box1, box2):
   return float(intersect) / union
 
 def nms(plate, thresh):
-  plate = [idx for idx in sorted(plate, key=lambda x:x[1], reverse=Ture)]
+  plate = [idx for idx in sorted(plate, key=lambda x:x[1], reverse=True)]
   nums = len(plate)
   bbox = [pt[2] for pt in plate]
   
@@ -50,7 +50,7 @@ def nms(plate, thresh):
   
   return plate
 
-if __name__="__main__":
+if __name__=="__main__":
   image = cv2.imread("timg.jpg")
   plate = pr.HyperLPR_PlateRecogntion(image)
   nums = len(plate)
